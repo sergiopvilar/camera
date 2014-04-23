@@ -2,19 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <style type="text/css">
-        body, html{margin:0; padding:0; width:640px; height: 480px; overflow: hidden}
-    </style>
-
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
+
+    <div class="toolbar"></div>
+    <div class="button-container">
+        <button class="btn-os close"></button>
+        <button class="btn-os hide"></button>
+    </div>
 
     <video width="640" height="480" autoplay></video>
     <canvas width="640" height="480" style="display:none;"></canvas>
 
     <script>
 
-        var path = '/Users/sergiovilar/Desktop'
+        var path = '/Users/sergiovilar/Desktop',
+            gui = require('nw.gui'),
+            win = gui.Window.get();
+
+        document.querySelector('.btn-os.hide').addEventListener('click', function(){
+            win.minimize();
+        });
+
+        document.querySelector('.btn-os.close').addEventListener('click', function(){
+            win.close();
+        });
 
         function gravaImagem(img){
 

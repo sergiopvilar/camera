@@ -1,0 +1,68 @@
+/* 
+* @Author: sergiovilar
+* @Date:   2014-04-22 21:30:03
+* @Last Modified by:   sergiovilar
+* @Last Modified time: 2014-04-22 21:31:32
+*/
+
+body, html{
+
+	margin:0; 
+	padding:0; 
+	width:640px; 
+	height: 
+	480px; 
+	overflow: hidden;
+
+}
+
+.toolbar{
+
+	background:#525453; 
+	position: absolute;
+	top:0; 
+	width:640px; 
+	opacity: 0.75; 
+	height: 20px; 
+	-webkit-user-select: none; 
+	-webkit-app-region: drag
+
+}
+
+.button-container{
+
+	position: absolute; 
+	top:0; 
+	width:640px; 
+	padding:2px 3px;
+
+}
+
+.btn-os{
+
+    border-radius: 30px;
+    border: 0;
+    color: transparent;
+    display: inline-block;
+    font-size: 10px;
+    height: 12px;
+    padding: 0;
+    text-align: center;
+    width: 12px;
+    cursor: pointer;
+    outline: none;
+    -webkit-app-region: no-drag;
+
+}
+
+.btn-os.close:hover{
+
+    background:#dd3628;
+
+}
+
+.btn-os.hide:hover{
+
+    background:#ddc548;
+    
+}
