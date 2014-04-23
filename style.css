@@ -2,7 +2,7 @@
 * @Author: sergiovilar
 * @Date:   2014-04-22 21:30:03
 * @Last Modified by:   sergiovilar
-* @Last Modified time: 2014-04-22 21:31:32
+* @Last Modified time: 2014-04-22 21:48:43
 */
 
 body, html{
@@ -25,7 +25,8 @@ body, html{
 	opacity: 0.75; 
 	height: 20px; 
 	-webkit-user-select: none; 
-	-webkit-app-region: drag
+	-webkit-app-region: drag;
+	z-index:200;
 
 }
 
@@ -35,6 +36,7 @@ body, html{
 	top:0; 
 	width:640px; 
 	padding:2px 3px;
+	z-index:200;
 
 }
 
@@ -64,5 +66,10 @@ body, html{
 .btn-os.hide:hover{
 
     background:#ddc548;
-    
+
+}
+
+video {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
